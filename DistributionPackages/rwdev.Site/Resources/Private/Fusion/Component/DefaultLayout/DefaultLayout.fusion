@@ -1,0 +1,9 @@
+prototype(rwdev.Site:Component.DefaultLayout) < prototype(Neos.Fusion:Component) {
+    content = ''
+
+    renderer = afx`
+        <rwdev.Site:Component.Header />
+        {props.content}
+        <rwdev.Site:Component.Footer />
+    `
+}

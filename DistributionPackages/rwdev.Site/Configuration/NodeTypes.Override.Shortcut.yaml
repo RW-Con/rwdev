@@ -1,0 +1,6 @@
+
+'Neos.Neos:Shortcut':
+  constraints:
+    nodeTypes:
+      'rwdev.Site:Document.HomePage': false
+      'rwdev.Site:Constraint.Document.Restricted': false
