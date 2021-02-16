@@ -1,0 +1,4 @@
+Neos_GoogleApiClient_Credentials:
+  frontend: Neos\Cache\Frontend\VariableFrontend
+  backend: Neos\Cache\Backend\SimpleFileBackend
+  persistent: true

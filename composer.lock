@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8a6a2d7f7a0ee3b488142a4e93bf21e3",
+    "content-hash": "c2609b52ef4ea0f1f5b8d2177e13d030",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -3826,6 +3826,127 @@
                 "source": "https://github.com/middlewares/utils/tree/v3.2.0"
             },
             "time": "2020-11-30T20:07:15+00:00"
+        },
+        {
+            "name": "moc/notfound",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mocdk/MOC.NotFound.git",
+                "reference": "1ab1dbe50e0e18bd9f42ff5ebc16a330ee3eab60"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mocdk/MOC.NotFound/zipball/1ab1dbe50e0e18bd9f42ff5ebc16a330ee3eab60",
+                "reference": "1ab1dbe50e0e18bd9f42ff5ebc16a330ee3eab60",
+                "shasum": ""
+            },
+            "require": {
+                "neos/neos": ">=4.3"
+            },
+            "type": "neos-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                },
+                "applied-flow-migrations": [
+                    "TYPO3.FLOW3-201201261636",
+                    "TYPO3.Fluid-201205031303",
+                    "TYPO3.FLOW3-201205292145",
+                    "TYPO3.FLOW3-201206271128",
+                    "TYPO3.FLOW3-201209201112",
+                    "TYPO3.Flow-201209251426",
+                    "TYPO3.Flow-201211151101",
+                    "TYPO3.Flow-201212051340",
+                    "TYPO3.TypoScript-130516234520",
+                    "TYPO3.TypoScript-130516235550",
+                    "TYPO3.TYPO3CR-130523180140",
+                    "TYPO3.Neos.NodeTypes-201309111655",
+                    "TYPO3.Flow-201310031523",
+                    "TYPO3.Flow-201405111147",
+                    "TYPO3.Neos-201407061038",
+                    "TYPO3.Neos-201409071922",
+                    "TYPO3.TYPO3CR-140911160326",
+                    "TYPO3.Neos-201410010000",
+                    "TYPO3.TYPO3CR-141101082142",
+                    "TYPO3.Neos-20141113115300",
+                    "TYPO3.Fluid-20141113120800",
+                    "TYPO3.Flow-20141113121400",
+                    "TYPO3.Fluid-20141121091700",
+                    "TYPO3.Neos-20141218134700",
+                    "TYPO3.Fluid-20150214130800",
+                    "TYPO3.Neos-20150303231600",
+                    "TYPO3.TYPO3CR-20150510103823",
+                    "TYPO3.Flow-20151113161300",
+                    "TYPO3.Form-20160601101500",
+                    "TYPO3.Flow-20161115140400",
+                    "TYPO3.Flow-20161115140430",
+                    "Neos.Flow-20161124204700",
+                    "Neos.Flow-20161124204701",
+                    "Neos.Twitter.Bootstrap-20161124204912",
+                    "Neos.Form-20161124205254",
+                    "Neos.Flow-20161124224015",
+                    "Neos.Party-20161124225257",
+                    "Neos.Eel-20161124230101",
+                    "Neos.Kickstart-20161124230102",
+                    "Neos.Setup-20161124230842",
+                    "Neos.Imagine-20161124231742",
+                    "Neos.Media-20161124233100",
+                    "Neos.NodeTypes-20161125002300",
+                    "Neos.SiteKickstarter-20161125002311",
+                    "Neos.Neos-20161125002322",
+                    "Neos.ContentRepository-20161125012000",
+                    "Neos.Fusion-20161125013710",
+                    "Neos.Setup-20161125014759",
+                    "Neos.SiteKickstarter-20161125095901",
+                    "Neos.Fusion-20161125104701",
+                    "Neos.NodeTypes-20161125104800",
+                    "Neos.Neos-20161125104802",
+                    "Neos.Kickstarter-20161125110814",
+                    "Neos.Neos-20161125122412",
+                    "Neos.Flow-20161125124112",
+                    "Neos.SwiftMailer-20161130105617",
+                    "TYPO3.FluidAdaptor-20161130112935",
+                    "Neos.Fusion-20161201202543",
+                    "Neos.Neos-20161201222211",
+                    "Neos.Fusion-20161202215034",
+                    "Neos.Fusion-20161219092345",
+                    "Neos.ContentRepository-20161219093512",
+                    "Neos.Media-20161219094126",
+                    "Neos.Neos-20161219094403",
+                    "Neos.Neos-20161219122512",
+                    "Neos.Fusion-20161219130100",
+                    "Neos.Neos-20161220163741",
+                    "Neos.Fusion-20170120013047"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "MOC\\NotFound\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aske Ertmann",
+                    "email": "aske@ertmann.co"
+                }
+            ],
+            "description": "Neos CMS package that loads a normal editable page for displaying a 404 error",
+            "keywords": [
+                "404",
+                "Neos",
+                "flow",
+                "not found"
+            ],
+            "support": {
+                "issues": "https://github.com/mocdk/MOC.NotFound/issues",
+                "source": "https://github.com/mocdk/MOC.NotFound/tree/master"
+            },
+            "time": "2020-01-16T07:59:47+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -9357,7 +9478,7 @@
             "dist": {
                 "type": "path",
                 "url": "./DistributionPackages/rwdev.Site",
-                "reference": "5ef1e06a73b5ba28140561a2e99a5ac5273bfa98"
+                "reference": "18c5fa91a36c736ad5b2931c74a5aa3ea5b2eff4"
             },
             "require": {
                 "carbon/compression": "^3.0",
@@ -10676,6 +10797,164 @@
                 "source": "https://github.com/sitegeist/Sitegeist.Lazybones/tree/v3.0.1"
             },
             "time": "2020-12-16T17:46:17+00:00"
+        },
+        {
+            "name": "sitegeist/magicwand",
+            "version": "v4.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sitegeist/Sitegeist.MagicWand.git",
+                "reference": "d400e57a0c89962a83a1c86745a0f445358ae7ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sitegeist/Sitegeist.MagicWand/zipball/d400e57a0c89962a83a1c86745a0f445358ae7ce",
+                "reference": "d400e57a0c89962a83a1c86745a0f445358ae7ce",
+                "shasum": ""
+            },
+            "require": {
+                "neos/flow": "^7.0 || dev-master"
+            },
+            "type": "neos-package",
+            "extra": {
+                "applied-flow-migrations": [
+                    "TYPO3.FLOW3-201201261636",
+                    "TYPO3.Fluid-201205031303",
+                    "TYPO3.FLOW3-201205292145",
+                    "TYPO3.FLOW3-201206271128",
+                    "TYPO3.FLOW3-201209201112",
+                    "TYPO3.Flow-201209251426",
+                    "TYPO3.Flow-201211151101",
+                    "TYPO3.Flow-201212051340",
+                    "TYPO3.TypoScript-130516234520",
+                    "TYPO3.TypoScript-130516235550",
+                    "TYPO3.TYPO3CR-130523180140",
+                    "TYPO3.Neos.NodeTypes-201309111655",
+                    "TYPO3.Flow-201310031523",
+                    "TYPO3.Flow-201405111147",
+                    "TYPO3.Neos-201407061038",
+                    "TYPO3.Neos-201409071922",
+                    "TYPO3.TYPO3CR-140911160326",
+                    "TYPO3.Neos-201410010000",
+                    "TYPO3.TYPO3CR-141101082142",
+                    "TYPO3.Neos-20141113115300",
+                    "TYPO3.Fluid-20141113120800",
+                    "TYPO3.Flow-20141113121400",
+                    "TYPO3.Fluid-20141121091700",
+                    "TYPO3.Neos-20141218134700",
+                    "TYPO3.Fluid-20150214130800",
+                    "TYPO3.Neos-20150303231600",
+                    "TYPO3.TYPO3CR-20150510103823",
+                    "TYPO3.Flow-20151113161300",
+                    "TYPO3.Form-20160601101500",
+                    "TYPO3.Flow-20161115140400",
+                    "TYPO3.Flow-20161115140430",
+                    "Neos.Flow-20161124204700",
+                    "Neos.Flow-20161124204701",
+                    "Neos.Twitter.Bootstrap-20161124204912",
+                    "Neos.Form-20161124205254",
+                    "Neos.Flow-20161124224015",
+                    "Neos.Party-20161124225257",
+                    "Neos.Eel-20161124230101",
+                    "Neos.Kickstart-20161124230102",
+                    "Neos.Setup-20161124230842",
+                    "Neos.Imagine-20161124231742",
+                    "Neos.Media-20161124233100",
+                    "Neos.NodeTypes-20161125002300",
+                    "Neos.SiteKickstarter-20161125002311",
+                    "Neos.Neos-20161125002322",
+                    "Neos.ContentRepository-20161125012000",
+                    "Neos.Fusion-20161125013710",
+                    "Neos.Setup-20161125014759",
+                    "Neos.SiteKickstarter-20161125095901",
+                    "Neos.Fusion-20161125104701",
+                    "Neos.NodeTypes-20161125104800",
+                    "Neos.Neos-20161125104802",
+                    "Neos.Kickstarter-20161125110814",
+                    "Neos.Neos-20161125122412",
+                    "Neos.Flow-20161125124112",
+                    "TYPO3.FluidAdaptor-20161130112935",
+                    "Neos.Fusion-20161201202543",
+                    "Neos.Neos-20161201222211",
+                    "Neos.Fusion-20161202215034",
+                    "Neos.Fusion-20161219092345",
+                    "Neos.ContentRepository-20161219093512",
+                    "Neos.Media-20161219094126",
+                    "Neos.Neos-20161219094403",
+                    "Neos.Neos-20161219122512",
+                    "Neos.Fusion-20161219130100",
+                    "Neos.Neos-20161220163741",
+                    "Neos.Fusion-20170120013047"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sitegeist\\MagicWand\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Wilhelm Behncke",
+                    "email": "behncke@sitegeist.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Martin Ficzel",
+                    "email": "ficzel@sitegeist.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Tools that make the Flow/Neos development easier",
+            "support": {
+                "issues": "https://github.com/sitegeist/Sitegeist.MagicWand/issues",
+                "source": "https://github.com/sitegeist/Sitegeist.MagicWand/tree/v4.2.0"
+            },
+            "time": "2020-12-16T16:43:57+00:00"
+        },
+        {
+            "name": "sitegeist/silhouettes",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sitegeist/Sitegeist.Silhouettes.git",
+                "reference": "bee168a0b882886fc9c6aefaa40cc87263ca9791"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sitegeist/Sitegeist.Silhouettes/zipball/bee168a0b882886fc9c6aefaa40cc87263ca9791",
+                "reference": "bee168a0b882886fc9c6aefaa40cc87263ca9791",
+                "shasum": ""
+            },
+            "require": {
+                "neos/content-repository": "^4.0 || ^5.0 || ^7.0 || dev-master",
+                "neos/neos-ui": "^4.0 || ^5.0 || ^7.0 || dev-master",
+                "neos/utility-arrays": "^5.0 || ^6.0 || ^7.0 || dev-master"
+            },
+            "type": "neos-package",
+            "extra": {
+                "neos": {
+                    "package-key": "Sitegeist.Silhouettes"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sitegeist\\Silhouettes\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "description": "Preconfigure property-silhuettes that can be applied to various properties of multiple NodeTypes.",
+            "support": {
+                "issues": "https://github.com/sitegeist/Sitegeist.Silhouettes/issues",
+                "source": "https://github.com/sitegeist/Sitegeist.Silhouettes/tree/v2.0.1"
+            },
+            "time": "2020-12-16T21:36:35+00:00"
         },
         {
             "name": "slim/psr7",

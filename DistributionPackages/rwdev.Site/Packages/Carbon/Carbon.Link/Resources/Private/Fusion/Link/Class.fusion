@@ -1,0 +1,23 @@
+prototype(Carbon.Link:Class) < prototype(Neos.Fusion:RawArray) {
+    link = ${link ? link : false}
+
+    @context.link = ${this.link}
+
+    valid = Carbon.Link:Valid
+    prepend = 'link'
+    divider = '-'
+
+    linkType = Carbon.Link:Type
+
+    @ignoreProperties = ${['link', 'valid', 'prepend', 'divider', 'linkType']}
+
+    additionalClass = ${additionalClass}
+    additionalClass.@process {
+      convertToString = ${Type.isArray(value) ? Array.join(value, ' ') : String.toString(value)}
+      trimString = ${String.trim(value)}
+    }
+
+    value = ${this.linkType && this.valid ? this.prepend + this.divider + this.linkType : null}
+
+    @process.clearIfEmpty = ${this.value || this.additionalClass ? value : null}
+}

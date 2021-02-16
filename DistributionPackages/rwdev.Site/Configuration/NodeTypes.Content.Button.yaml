@@ -1,0 +1,46 @@
+
+'rwdev.Site:Content.Button':
+  superTypes:
+    'Neos.Neos:Content': true
+    'rwdev.Site:Mixin.InspectorGeneral': true
+  ui:
+    label: Button
+    icon: icon-link
+    position: 400
+  properties:
+    title:
+      type: string
+      defaultValue: ''
+      ui:
+        inlineEditable: true
+        inline:
+          editorOptions:
+            placeholder: 'Enter button label here...'
+            autoparagraph: false
+      options:
+        silhouette: codeq.text.plain
+    alignment:
+      type: string
+      ui:
+        label: Alignment
+        reloadIfChanged: true
+        inspector:
+          group: general
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            allowEmpty: false
+            values:
+              has-text-left:
+                label: 'left'
+              has-text-centered:
+                label: 'center'
+              has-text-right:
+                label: 'right'
+    link:
+      type: string
+      defaultValue: 'Enter Link...'
+      ui:
+        label: Link
+        inspector:
+          group: general
+          editor: 'Neos.Neos/Inspector/Editors/LinkEditor'

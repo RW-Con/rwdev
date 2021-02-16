@@ -1,0 +1,47 @@
+prototype(Carbon.Link:Type) < prototype(Neos.Fusion:Case) {
+    link = ${link ? link : false}
+
+    @context {
+        scheme = ${Neos.Link.getScheme(this.link)}
+        node = ${Neos.Link.convertUriToObject(this.link, node)}
+        link = ${this.link}
+    }
+
+    @ignoreProperties = ${['link']}
+
+    isShortcut {
+        condition = ${q(node).is('[instanceof Neos.Neos:Shortcut]') && q(node).property('targetMode') == 'selectedTarget'}
+        renderer = Carbon.Link:Type {
+            link = ${q(node).property('target')}
+        }
+    }
+
+    hasScheme {
+        condition = ${scheme}
+        renderer = ${scheme}
+    }
+    isHash {
+        condition = ${String.startsWith(link, '#')}
+        renderer = 'hash'
+    }
+    isEmail {
+        condition = ${String.startsWith(link, 'mailto:')}
+        renderer = 'mail'
+    }
+    isTel {
+        condition = ${String.startsWith(link, 'tel:')}
+        renderer = 'tel'
+    }
+    isAppLink {
+        condition = ${String.indexOf(link, '//') == -1}
+        renderer = 'app'
+    }
+    isExternal {
+        condition = ${link}
+        renderer = 'external'
+    }
+    noLink {
+        condition = true
+        renderer = false
+    }
+}

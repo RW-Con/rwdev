@@ -1,0 +1,9 @@
+parameters:
+	ignoreErrors:
+		- '#Access to an undefined property voku\\helper\\SimpleHtmlDomInterface::\$outerHtml#'
+	classesAllowedToBeExtended:
+		- WyriHaximus\HtmlCompress\Compressor\Compressor
+		- WyriHaximus\HtmlCompress\Tests\Compressor\AbstractVendorCompressorTest
+
+includes:
+	- vendor/wyrihaximus/test-utilities/rules.neon

@@ -1,0 +1,17 @@
+Neos:
+  Flow:
+    log:
+      googleApiClientLogger:
+        logger: Neos\Flow\Log\Logger
+        backend: Neos\Flow\Log\Backend\FileBackend
+        backendOptions:
+          logFileURL: '%FLOW_PATH_DATA%Logs/GoogleApiClient.log'
+          createParentDirectories: true
+          severityThreshold: '%LOG_INFO%'
+          maximumLogFileSize: 10485760
+          logFilesToKeep: 1
+          logMessageOrigin: false
+
+Flowpack:
+  GoogleApiClient:
+    applicationName: 'Neos Flow'

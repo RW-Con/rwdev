@@ -1,0 +1,16 @@
+prototype(rwdev.Site:Content.Button) < prototype(Neos.Neos:ContentComponent) {
+    title = Neos.Neos:Editable {
+        property = 'title'
+    }
+    link = ${q(node).property('link')}
+    linkTarget = ${q(node).property('linkTarget') ? '_blank' : '_self'}
+    renderAsLink = ${site.context.inBackend ? false : true}
+    
+    alignment = ${q(node).property('alignment')}
+    
+    renderer = afx`
+    <div class={props.alignment}>
+        <Carbon.Link:Link link={props.link} additionalClass="rwdev-site-button">{props.title}</Carbon.Link:Link>
+    </div>
+    `
+}

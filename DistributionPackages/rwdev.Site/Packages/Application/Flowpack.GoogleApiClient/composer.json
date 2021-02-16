@@ -1,0 +1,20 @@
+{
+    "name": "flowpack/googleapiclient",
+    "type": "neos-package",
+    "description": "Google Api Client provider for Neos Flow",
+    "license": ["GPL-3.0-or-later"],
+    "require": {
+        "google/apiclient": "^2.2",
+        "neos/flow": "~5.0 || ~6.0 || ~7.0 || dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Flowpack\\GoogleApiClient\\": "Classes"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Flowpack.GoogleApiClient"
+        }
+    }
+}

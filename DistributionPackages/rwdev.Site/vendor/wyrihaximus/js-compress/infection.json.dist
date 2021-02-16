@@ -1,0 +1,32 @@
+{
+    "timeout": 120,
+    "source": {
+        "directories": [
+            "src"
+        ]
+    },
+    "logs": {
+        "text": "infection-log.txt"
+    },
+     "mutators": {
+         "@default": true,
+         "ArrayItemRemoval": {
+             "ignore": [
+                 "WyriHaximus\\JsCompress\\Factory::construct",
+                 "WyriHaximus\\JsCompress\\Factory::constructSmallest"
+             ]
+         },
+         "CastString": {
+             "ignore": [
+                 "WyriHaximus\\JsCompress\\Compressor\\JSqueezeCompressor::compress",
+                 "WyriHaximus\\JsCompress\\Compressor\\JSMinCompressor::compress",
+                 "WyriHaximus\\JsCompress\\Compressor\\JavaScriptPackerCompressor::compress"
+             ]
+         },
+         "TrueValue": {
+             "ignore": [
+                 "WyriHaximus\\JsCompress\\Factory::constructSmallest"
+             ]
+         }
+     }
+}

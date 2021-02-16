@@ -1,0 +1,13 @@
+Carbon:
+  Link:
+    externalTarget: _blank
+    assetExternal: 'image,video,pdf'
+    instanceOfDocument: '[instanceof Neos.Neos:Document]'
+    prependIdentifier: id-
+    defaultPhoneCountryCode: false
+
+Neos:
+  Neos:
+    fusion:
+      autoInclude:
+        Carbon.Link: true

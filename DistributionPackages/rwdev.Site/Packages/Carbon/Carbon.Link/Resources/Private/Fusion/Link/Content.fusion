@@ -1,0 +1,48 @@
+prototype(Carbon.Link:Content) < prototype(Neos.Fusion:Value) {
+    link = ${link ? link : false}
+    contentKey = ${contentKey || 'title'}
+    @context {
+        link = ${this.link}
+        contentKey = ${this.contentKey}
+    }
+    isValid = Carbon.Link:Valid
+    @if.isValid = ${this.isValid || renderDefaultTagIfNoLink ? true : false}
+
+    value = Neos.Fusion:Case {
+        @context.linkType = Carbon.Link:Type {
+            isShortcut.condition = false
+        }
+
+        isAsset {
+            condition = ${linkType == 'asset'}
+            renderer = Carbon.Link:Asset
+        }
+        isNode {
+            condition = ${linkType == 'node'}
+            renderer = Neos.Fusion:Value {
+                node = ${Neos.Link.convertUriToObject(link, documentNode)}
+                value = ${contentKey == 'title' ? q(this.node).property('title') : this.node.label}
+            }
+        }
+        isEmail {
+            condition = ${linkType == 'mail'}
+            renderer = ${String.replace(link, 'mailto:', '')}
+        }
+        isHttp {
+            condition = ${String.startsWith(link, 'http')}
+            renderer = ${String.pregReplace(link, '/^http(s)?:\/\//', '')}
+        }
+        isDoubleSlash {
+            condition = ${String.startsWith(link, '//')}
+            renderer = ${String.pregReplace(link, '/^\/\//', '')}
+        }
+        fallback {
+            condition = ${linkType ? true : false}
+            renderer = ${link}
+        }
+        noLink {
+            condition = true
+            renderer = false
+        }
+    }
+}

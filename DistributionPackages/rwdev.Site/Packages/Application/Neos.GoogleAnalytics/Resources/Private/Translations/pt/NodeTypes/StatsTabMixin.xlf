@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="" product-name="Neos.GoogleAnalytics" source-language="en" datatype="plaintext" target-language="pt-PT">
+    <body>
+      <trans-unit id="tabs.stats" xml:space="preserve">
+				<source>Stats</source>
+			<target state="translated">Estatus</target></trans-unit>
+      <trans-unit id="groups.analytics" xml:space="preserve">
+				<source>Analytics</source>
+			<target state="needs-translation">Analytics</target></trans-unit>
+      <trans-unit id="views.gaUniquePageviewsPerDay" xml:space="preserve">
+				<source>Sessions</source>
+			<target state="needs-translation">Sessions</target></trans-unit>
+      <trans-unit id="views.gaBasic" xml:space="preserve">
+				<source>Performance</source>
+			<target state="translated">Rendimiento</target></trans-unit>
+      <trans-unit id="views.gaUniquePageviewsByDeviceCategory" xml:space="preserve">
+				<source>Device categories</source>
+			<target state="translated">
+Categorias de dispositivos</target></trans-unit>
+      <trans-unit id="views.gaUniquePageviewsByUserType" xml:space="preserve">
+				<source>User types</source>
+			<target state="translated">Tipos do usuario</target></trans-unit>
+    </body>
+  </file>
+</xliff>

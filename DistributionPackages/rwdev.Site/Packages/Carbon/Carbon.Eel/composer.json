@@ -1,0 +1,40 @@
+{
+    "name": "carbon/eel",
+    "type": "neos-carbon",
+    "description": "Some nice Eel helper for Neos.io",
+    "license": "MIT",
+    "keywords": ["neos", "fusion", "helper", "eel", "carbon"],
+    "require": {
+        "neos/flow": "~4.0 || ~5.0 || ~6.0 || ~7.0",
+        "behat/transliterator": "^1.2"
+    },
+    "authors": [
+        {
+            "name": "Jon Uhlmann",
+            "email": "me@jonnitto.ch",
+            "homepage": "https://jonnitto.ch",
+            "role": "Developer"
+        }
+    ],
+    "archive": {
+        "exclude": [
+            ".editorconfig",
+            ".gitattributes",
+            ".github",
+            ".gitignore",
+            "CODE_OF_CONDUCT.md"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "Carbon\\Eel\\": "Classes"
+        }
+    },
+    "extra": {
+        "marketplace-account": "me@jonnitto.ch",
+        "installer-name": "Carbon.Eel",
+        "neos": {
+            "package-key": "Carbon.Eel"
+        }
+    }
+}

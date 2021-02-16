@@ -1,0 +1,6 @@
+Neos\GoogleAnalytics\Service\GoogleAnalytics:
+  arguments:
+    1:
+      object:
+        factoryObjectName: Flowpack\GoogleApiClient\Service\ClientFactory
+        factoryMethodName: create

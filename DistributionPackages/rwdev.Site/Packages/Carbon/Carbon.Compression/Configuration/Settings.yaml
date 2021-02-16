@@ -1,0 +1,11 @@
+Neos:
+  Flow:
+    http:
+      middlewares:
+        minifyHtml:
+          middleware: Carbon:Compression
+          position: start
+  Neos:
+    fusion:
+      autoInclude:
+        "Carbon.Compression": true
