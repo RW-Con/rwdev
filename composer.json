@@ -9,7 +9,10 @@
         }
     },
     "require": {
-        "rwdev/site": "@dev"
+        "rwdev/site": "@dev",
+        "sitegeist/silhouettes": "^2.0",
+        "moc/notfound": "^4.0",
+        "sitegeist/magicwand": "^4.2"
     },
     "repositories": {
         "distribution": {
